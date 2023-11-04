@@ -1,0 +1,46 @@
+body,html{
+  background-color: #212121;
+  
+}
+.App {
+  text-align: center;
+  font-family: "Azeret Mono";
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: 'Azeret Mono';
+  src: url('../public/Azeret_Mono/static/AzeretMono-Medium.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Azeret Mono';
+  src: url('../public/Azeret_Mono/static/AzeretMono-Light.ttf') format('truetype');
+  font-weight: normal;
+}
+
+.App-header {
+  width: 100%;
+  background-color: #212121;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #5a47b3;
+}
+
+.barterlytext{
+  width: 100%;
+  font-size: 100px;
+}

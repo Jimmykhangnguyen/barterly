@@ -1,0 +1,46 @@
+.header {
+    width: 100%;
+    background-color: #212121;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.barterlytext {
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    display: flex;
+    position: relative;
+
+}
+
+.startContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.fancyArrow {
+    display: flex;
+    justify-content: left;
+    animation: slide 3s ease-in-out infinite;
+}
+
+@keyframes slide {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(50px);
+        /* Adjust the distance as needed */
+    }
+}
