@@ -1,7 +1,7 @@
 .mainBox{
 
     width: 60%;
-    background-color: rgb(193, 193, 193);
+    background-color: rgb(180, 180, 180);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,5 +22,54 @@
     box-sizing: border-box;
     border-radius: 5px;
     padding: 3%;
+
+}
+
+.submit{
+
+    font-family: "Azeret Mono";
+    font-size: large;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgb(84, 84, 84);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 3%;
+    width: 20%;
+    margin-bottom: 10px;
+
+}
+.submit:hover{
+    cursor: pointer;
+}
+.newTo{
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+.mainBoxSU{
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-justify: left;
+    justify-content: left;
+    row-gap: 10px;
+
+}
+.locInfoBox{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-justify: left;
+    justify-content: left;
+    row-gap: 10px;
+}
+.signUpParent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
 }

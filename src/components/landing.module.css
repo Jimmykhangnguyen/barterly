@@ -24,12 +24,18 @@
     height: 100%;
     display: flex;
     justify-content: right;
+    color: white;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .fancyArrow {
     display: flex;
     justify-content: left;
     animation: slide 3s ease-in-out infinite;
+}
+.fancyArrow:hover {
+    animation: slide 1s ease-in-out infinite;
 }
 
 @keyframes slide {
@@ -43,4 +49,18 @@
         transform: translateX(50px);
         /* Adjust the distance as needed */
     }
+}
+
+.link{
+    color: white;
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.link:hover{
+
+    color: #bebebe;
+}
+.link:active{
+    color: white;
 }
