@@ -44,7 +44,8 @@ cur.execute("""
         userr TEXT,
         userg TEXT,
         ratingr INT CHECK (ratingr >= 0 AND ratingr <= 10), 
-        ratingg INT CHECK (ratingg >= 0 AND ratingg <= 10)
+        ratingg INT CHECK (ratingg >= 0 AND ratingg <= 10),
+        transactiondate DATE
     )
 """)
 
