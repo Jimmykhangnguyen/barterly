@@ -80,16 +80,16 @@ tdata = [
 ]
 
 
-cur.executemany(
-    "INSERT INTO product VALUES(?, ?, ?, ?, ?, ?)", pdata)
-con.commit()
+# cur.executemany(
+#     "INSERT INTO product VALUES(?, ?, ?, ?, ?, ?)", pdata)
+# con.commit()
 
-cur.executemany(
-    "INSERT INTO transactions VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)", tdata)
-con.commit()
+# cur.executemany(
+#     "INSERT INTO transactions VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)", tdata)
+# con.commit()
 
-cur.executemany(
-    "INSERT INTO user VALUES(?, ?, ?, ?, ?, ?, ?, ?)", udata)
-con.commit()
+# cur.executemany(
+#     "INSERT INTO user VALUES(?, ?, ?, ?, ?, ?, ?, ?)", udata)
+# con.commit()
 
 con.close()
