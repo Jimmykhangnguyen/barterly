@@ -15,6 +15,8 @@
 
 Barterly is a unique online platform that facilitates the exchange of goods and services without the use of traditional currency. Users can trade items they no longer need for items they desire, fostering a sense of community and sustainability.
 
+[[https://barterly.select/]]
+
 ## Features
 
 ### 1. User-Friendly Interface 𖨆𐀪
