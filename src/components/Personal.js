@@ -1,12 +1,12 @@
-import styles from "./trading.module.css";
+import styles from "./personal.module.css";
 import React from "react";
 
-function Trading(){
+function Personal(){
     return(
         <header>
-
+            
         </header>
     )
 };
 
-export default Trading;
+export default Personal;
