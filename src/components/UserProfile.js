@@ -4,6 +4,13 @@ import profileImage from './profile_pic/profile1.jpg';
 
 
 function UserProfile() {
+
+    const name = "Thomas Yonge";
+    const email = "thomas@gmail.com";
+    const location = "Toronto";
+    const privacySetting = "Private";
+    const joinedDate = "20/6/2023";
+
     return (
         <header className="App-header">
             <div className={styles.profile_header}>
@@ -15,11 +22,11 @@ function UserProfile() {
             </div>
 
             <div className={styles.profile_info}>
-                <ul><p>Name: Thomas Yonge</p></ul>
-                <ul><p>Email: thomas@gmail.com</p></ul>
-                <ul><p>Location: Toronto</p></ul>
-                <ul><p>Privacy setting: Private</p></ul>
-                <ul><p>Joined on 20/6/2023</p></ul>
+                <ul><p>Name: {name}</p></ul>
+                <ul><p>Email: {email}</p></ul>
+                <ul><p>Location: {location}</p></ul>
+                <ul><p>Privacy setting: {privacySetting}</p></ul>
+                <ul><p>Joined on {joinedDate}</p></ul>
             </div>
 
             <div className={styles.profile_pic}>
