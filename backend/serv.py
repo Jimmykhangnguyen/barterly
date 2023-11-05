@@ -28,7 +28,7 @@ def get_login():
         data = cursor.fetchall()
 
         # df = pd.DataFrame(data, columns=["column_name_1", "column_name_2", ...])
-        print(data)
+        
         cursor.close()
         connection.close()
         return data
@@ -44,14 +44,37 @@ def get_useritems():
 
         usercheckquery = request.args.get('query')
 
-        cursor.execute("SELECT * FROM your_table")
+        cursor.execute("SELECT * FROM users WHERE username = '{u}';".format(u=usercheckquery))
         data = cursor.fetchall()
+        cursor.execute("SELECT * FROM product WHERE username = '{u}';".format(u=usercheckquery))
+        data = data + cursor.fetchall()
+
         cursor.close()
         connection.close()
-        return jsonify(data)
+
+        return data
     except Exception as e:
         return jsonify({'error': str(e)})
 
+@app.route('/get_recommended', methods=['GET'])
+def get_useritems():
+    try:
+        connection = psycopg2.connect(**db_config)
+        cursor = connection.cursor()
+
+        usercheckquery = request.args.get('query')
+
+        cursor.execute("SELECT * FROM users WHERE username = '{u}';".format(u=usercheckquery))
+        data = cursor.fetchall()
+        cursor.execute("SELECT * FROM product WHERE username = '{u}';".format(u=usercheckquery))
+        data = data + cursor.fetchall()
+
+        cursor.close()
+        connection.close()
+
+        return data
+    except Exception as e:
+        return jsonify({'error': str(e)})
 
 @app.route('/add_user', methods=['POST'])
 def add_user():
