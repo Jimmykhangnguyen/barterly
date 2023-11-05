@@ -1,6 +1,6 @@
 import styles from "./profile.module.css";
 import React from "react";
-import profileImage from './profile_pic/profile1.jpg'; // Import the image file
+import profileImage from './profile_pic/profile1.jpg';
 
 
 function UserProfile() {
@@ -11,7 +11,7 @@ function UserProfile() {
             </div>
 
             <div>
-                <a href="/SignUp" className={styles.linkToTrade}>items for trade</a>
+                <a href="/Trading/Trading" className={styles.linkToTrade}>items for trade</a>
             </div>
 
             <div className={styles.profile_info}>
