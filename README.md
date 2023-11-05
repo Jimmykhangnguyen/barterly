@@ -32,5 +32,5 @@ Leave feedback and ratings after each successful trade to build trust within the
 ### 5. Sustainability 𓇢𓆸
 Barterly promotes a sustainable lifestyle by reducing waste and promoting the reuse of items.
 
-### 6. Community Building ♡ ❤︎₊
+### 6. Community Building ♡₊ꨄ
 Connect with like-minded individuals in your local area and build a community of bartering enthusiasts.
