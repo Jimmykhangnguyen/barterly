@@ -22,7 +22,7 @@ cur.execute("""
 
 # User table
 cur.execute("""
-    CREATE TABLE user (
+    CREATE TABLE users (
         username TEXT CHECK (length(username) <= 16),
         email TEXT,
         password TEXT,

@@ -6,9 +6,10 @@ cur = con.cursor()
 
 # User data
 udata = [
-    ('Thomas1999', 'thomas@gmail.com', 'JHJ3jh3hK2NC', 'Thomas Yonge', 5, 3, 'Y4J T41', 'Toronto'),
-    ('Charles1999', 'charles@gmail.com', 'NF3N4h3hK2NC', 'Charles Olde', 9, 12, 'J4J T9L', 'Kingston'),
-    ('Tommy2003', 'tommy@gmail.com', 'J3JHWOOE24Wgjsd3', 'Tommy Middle-Age', 10, 3, 'K2R N1H', 'Boston')
+    # ('Thomas1999', 'thomas@gmail.com', 'JHJ3jh3hK2NC', 'Thomas Yonge', 5, 3, 'Y4J T41', 'Toronto'),
+    # ('Charles1999', 'charles@gmail.com', 'NF3N4h3hK2NC', 'Charles Olde', 9, 12, 'J4J T9L', 'Kingston'),
+    # ('Tommy2003', 'tommy@gmail.com', 'J3JHWOOE24Wgjsd3', 'Tommy Middle-Age', 10, 3, 'K2R N1H', 'Boston'),
+    ('test', 'test@gmail.com', 'test', 'Test Name', 10, 8, 'test', 'Test')
 ]
 
 # Product data
@@ -88,8 +89,8 @@ tdata = [
 #     "INSERT INTO transactions VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)", tdata)
 # con.commit()
 
-# cur.executemany(
-#     "INSERT INTO user VALUES(?, ?, ?, ?, ?, ?, ?, ?)", udata)
-# con.commit()
+cur.executemany(
+    "INSERT INTO user VALUES(?, ?, ?, ?, ?, ?, ?, ?)", udata)
+con.commit()
 
 con.close()
