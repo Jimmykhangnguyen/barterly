@@ -63,7 +63,7 @@ function UserProfile() {
     return (
         <div className={styles.header1}>
 
-            <div style={{ marginTop:"50vh",width: "100%", display: "flex", justifyContent: "center", columnGap: "100px" }}>
+            <div style={{ marginTop:"10vh",width: "100%", display: "flex", justifyContent: "center", columnGap: "100px" }}>
 
                 <div style={{ display: "flex", flexDirection: "column", rowGap: "20px", justifyContent: "center" }}>
                     <div className={styles.profile_pic}>

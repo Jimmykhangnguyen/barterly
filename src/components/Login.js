@@ -59,7 +59,6 @@ function Login({ userDataCallback }) {
     function setUserState(event) {
 
         event.preventDefault(); // Prevent the default form submission
-
         const formState = event.target;
         setUsername(formState.username.value.trim());
         setPass(formState.password.value.trim());
