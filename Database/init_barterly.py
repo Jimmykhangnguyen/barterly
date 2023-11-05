@@ -11,7 +11,7 @@ cur = con.cursor()
 # Product table
 cur.execute("""
     CREATE TABLE product (
-        user TEXT,
+        username TEXT,
         prod TEXT CHECK (length(prod) = 3),
         item TEXT,
         condition INT CHECK (condition >= 0 AND condition <= 10),
