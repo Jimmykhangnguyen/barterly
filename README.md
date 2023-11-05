@@ -23,7 +23,7 @@ Barterly offers a simple and intuitive interface, making it easy for users to li
 ### 2. Search and Filter ⌕
 Easily find items you're interested in by searching for specific keywords or applying filters based on category, location, and more.
 
-### 3. Secure Messaging ⌨
+### 3. Secure Messaging ◐◑
 Communicate with potential trading partners through our secure messaging system to discuss the details of the trade.
 
 ### 4. Ratings and Reviews ☆★
