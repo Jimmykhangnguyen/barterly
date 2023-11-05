@@ -41,6 +41,18 @@
 }
 .submit:hover{
     cursor: pointer;
+    color: rgb(189, 189, 189);
+    background-color: rgb(59, 59, 59);
+
+}
+.submit:active{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(27, 27, 27);
+
+}
+.submit:disabled{
+    cursor: not-allowed;
 }
 .newTo{
     color: black;

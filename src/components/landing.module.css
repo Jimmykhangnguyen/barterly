@@ -34,6 +34,7 @@
     justify-content: left;
     animation: slide 3s ease-in-out infinite;
 }
+
 .fancyArrow:hover {
     animation: slide 1s ease-in-out infinite;
 }
@@ -51,16 +52,17 @@
     }
 }
 
-.link{
+.link {
     color: white;
     transition: color 0.2s ease-in-out;
     text-decoration: none;
 }
 
-.link:hover{
+.link:hover {
 
     color: #bebebe;
 }
-.link:active{
+
+.link:active {
     color: white;
 }
