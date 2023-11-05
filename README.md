@@ -1,6 +1,6 @@
 # Barterly - Trading for all.
 
-                    ___           ___                       ___           ___                               
+```                 ___           ___                       ___           ___                               
      _____         /  /\         /  /\          ___        /  /\         /  /\                        ___   
     /  /::\       /  /::\       /  /::\        /  /\      /  /:/_       /  /::\                      /__/|  
    /  /:/\:\     /  /:/\:\     /  /:/\:\      /  /:/     /  /:/ /\     /  /:/\:\    ___     ___     |  |:|  
@@ -11,8 +11,7 @@
    \  \:\/:/     \  \:\        \  \:\           \  \:\   \  \:\/:/     \  \:\         \  \::/         \  \:\
     \  \::/       \  \:\        \  \:\           \__\/    \  \::/       \  \:\         \__\/           \__\/
      \__\/         \__\/         \__\/                     \__\/         \__\/                              
-
-![Barterly Logo](btr.png)
+```
 
 Barterly is a unique online platform that facilitates the exchange of goods and services without the use of traditional currency. Users can trade items they no longer need for items they desire, fostering a sense of community and sustainability.
 
