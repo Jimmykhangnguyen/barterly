@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0799e2f9.css",
+    "main.js": "/static/js/main.c30fcaa7.js",
+    "static/js/787.b46e25d5.chunk.js": "/static/js/787.b46e25d5.chunk.js",
+    "static/media/AzeretMono-Medium.ttf": "/static/media/AzeretMono-Medium.e47d9497a61e732985be.ttf",
+    "static/media/AzeretMono-Light.ttf": "/static/media/AzeretMono-Light.655f6ec75f8f8d449f5a.ttf",
+    "index.html": "/index.html",
+    "main.0799e2f9.css.map": "/static/css/main.0799e2f9.css.map",
+    "main.c30fcaa7.js.map": "/static/js/main.c30fcaa7.js.map",
+    "787.b46e25d5.chunk.js.map": "/static/js/787.b46e25d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0799e2f9.css",
+    "static/js/main.c30fcaa7.js"
+  ]
+}
