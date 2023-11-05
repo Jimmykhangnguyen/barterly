@@ -30,7 +30,8 @@ cur.execute("""
         rating INT CHECK (rating >= 0 AND rating <= 10),
         numtransactions INT,
         mailaddress TEXT,
-        location TEXT
+        location TEXT,
+        joineddate DATE
     )
 """)
 

@@ -6,44 +6,44 @@ cur = con.cursor()
 
 # User data
 udata = [
-    ('Thomas1999', 'thomas@gmail.com', 'JHJ3jh3hK2NC', 'Thomas Yonge', 5, 3, 'Y4J T41', 'Toronto'),
-    ('Charles1999', 'charles@gmail.com', 'NF3N4h3hK2NC', 'Charles Olde', 9, 12, 'J4J T9L', 'Kingston'),
-    ('Tommy2003', 'tommy@gmail.com', 'J3JHWOOE24Wgjsd3', 'Tommy Middle-Age', 10, 3, 'K2R N1H', 'Boston'),
-    ('test', 'test@gmail.com', 'test', 'Test Name', 10, 8, 'test', 'Test')
+    ('Thomas1999', 'thomas@gmail.com', 'JHJ3jh3hK2NC', 'Thomas Yonge', 5, 3, 'Y4J T41', 'Toronto', '2023-01-17'),
+    ('Charles1999', 'charles@gmail.com', 'NF3N4h3hK2NC', 'Charles Olde', 9, 12, 'J4J T9L', 'Kingston', '2022-11-27'),
+    ('Tommy2003', 'tommy@gmail.com', 'J3JHWOOE24Wgjsd3', 'Tommy Middle-Age', 10, 3, 'K2R N1H', 'Boston', '2023-02-15'),
+    ('test', 'test@gmail.com', 'test', 'Test Name', 10, 8, 'test', 'Test', '2022-01-01')
 ]
 
 # Product data
 pdata = [
-    ('Thomas', 'CLO' ,  'shirt',  8, '2023-11-04', 'Toronto'),
-    ('Thomas', 'CLO' ,  'sweatpants',  10, '2022-12-29', 'Vancouver'),
-    ('Thomas', 'CLO' ,  'blue fitted cap',  9, '2023-07-03', 'Montreal'),
-    ('Thomas', 'CLO' ,  'avocado socks',  7, '2023-01-17', 'Calgary'),
-    ('Thomas', 'CLO' ,  'shirt',  6, '2022-10-02', 'Toronto'),
-    ('Thomas', 'CLO' ,  'dress',  9, '2021-12-24', 'Calgary'),
-    ('Thomas', 'CLO' ,  'sweatpants',  5, '2023-08-30', 'Calgary'),
-    ('Thomas', 'CLO' ,  'sweatpants',  7, '2023-02-18', 'Montreal'),
-    ('Thomas', 'CLO' ,  'jeans',  8, '2022-05-22', 'Toronto'),
-    ('Thomas', 'CLO' ,  'jeans',  7, '2023-09-10', 'Ottawa'),
-    ('Tommy', 'ELE' ,  'sony headphones',  4, '2022-02-08', 'Toronto'),
-    ('Tommy', 'ELE' ,  'apple watch',  7, '2019-10-13', 'Toronto'),
-    ('Tommy', 'ELE' ,  'canon dslr',  8, '2020-08-29', 'Vancouver'),
-    ('Tommy', 'ELE' ,  'ipad pro',  5, '2022-06-27', 'Montreal'),
-    ('Tommy', 'ELE' ,  'hp laptop',  5, '2023-10-18', 'Ottawa'),
-    ('Tommy', 'ELE' ,  'sony headphones',  7, '2023-04-06', 'Vancouver'),
-    ('Tommy', 'ELE' ,  'iphone 11',  6, '2023-11-01', 'Toronto'),
-    ('Tommy', 'ELE' ,  'ipad pro',  9, '2021-01-24', 'Montreal'),
-    ('Tommy', 'ELE' ,  'ipad air',  8, '2020-08-20', 'Vancouver'),
-    ('Tommy', 'ELE' ,  'nintendo switch',  8, '2022-11-30', 'Montreal'),
-    ('Charles', 'STN' ,  'Calc II textbook',  3, '2022-05-20', 'Toronto'),
-    ('Charles', 'STN' ,  'Scientific calculator',  10, '2023-09-09', 'Ottawa'),
-    ('Charles', 'STN' ,  'Calc II textbook',  7, '2023-06-01', 'Calgary'),
-    ('Charles', 'STN' ,  'Scientific calculator',  9, '2022-12-15', 'Montreal'),
-    ('Charles', 'STN' ,  'post-it notes',  10, '2021-05-26', 'Toronto'),
-    ('Charles', 'STN' ,  'bullet journal',  10, '2023-03-28', 'Ottawa'),
-    ('Charles', 'STN' ,  'notebook',  9, '2021-06-22', 'Calgary'),
-    ('Charles', 'STN' ,  'Anthro textbook',  5, '2022-05-31', 'Toronto'),
-    ('Charles', 'STN' ,  'notebook',  7, '2023-10-12', 'Calgary'),
-    ('Charles', 'STN' ,  'notebook',  8, '2022-07-21', 'Ottawa')
+    ('Thomas1999', 'CLO' ,  'shirt',  8, '2023-11-04', 'Toronto'),
+    ('Thomas1999', 'CLO' ,  'sweatpants',  10, '2022-12-29', 'Vancouver'),
+    ('Thomas1999', 'CLO' ,  'blue fitted cap',  9, '2023-07-03', 'Montreal'),
+    ('Thomas1999', 'CLO' ,  'avocado socks',  7, '2023-01-17', 'Calgary'),
+    ('Thomas1999', 'CLO' ,  'shirt',  6, '2022-10-02', 'Toronto'),
+    ('Thomas1999', 'CLO' ,  'dress',  9, '2021-12-24', 'Calgary'),
+    ('Thomas1999', 'CLO' ,  'sweatpants',  5, '2023-08-30', 'Calgary'),
+    ('Thomas1999', 'CLO' ,  'sweatpants',  7, '2023-02-18', 'Montreal'),
+    ('Thomas1999', 'CLO' ,  'jeans',  8, '2022-05-22', 'Toronto'),
+    ('Thomas1999', 'CLO' ,  'jeans',  7, '2023-09-10', 'Ottawa'),
+    ('Tommy2003', 'ELE' ,  'sony headphones',  4, '2022-02-08', 'Toronto'),
+    ('Tommy2003', 'ELE' ,  'apple watch',  7, '2019-10-13', 'Toronto'),
+    ('Tommy2003', 'ELE' ,  'canon dslr',  8, '2020-08-29', 'Vancouver'),
+    ('Tommy2003', 'ELE' ,  'ipad pro',  5, '2022-06-27', 'Montreal'),
+    ('Tommy2003', 'ELE' ,  'hp laptop',  5, '2023-10-18', 'Ottawa'),
+    ('Tommy2003', 'ELE' ,  'sony headphones',  7, '2023-04-06', 'Vancouver'),
+    ('Tommy2003', 'ELE' ,  'iphone 11',  6, '2023-11-01', 'Toronto'),
+    ('Tommy2003', 'ELE' ,  'ipad pro',  9, '2021-01-24', 'Montreal'),
+    ('Tommy2003', 'ELE' ,  'ipad air',  8, '2020-08-20', 'Vancouver'),
+    ('Tommy2003', 'ELE' ,  'nintendo switch',  8, '2022-11-30', 'Montreal'),
+    ('Charles1999', 'STN' ,  'Calc II textbook',  3, '2022-05-20', 'Toronto'),
+    ('Charles1999', 'STN' ,  'Scientific calculator',  10, '2023-09-09', 'Ottawa'),
+    ('Charles1999', 'STN' ,  'Calc II textbook',  7, '2023-06-01', 'Calgary'),
+    ('Charles1999', 'STN' ,  'Scientific calculator',  9, '2022-12-15', 'Montreal'),
+    ('Charles1999', 'STN' ,  'post-it notes',  10, '2021-05-26', 'Toronto'),
+    ('Charles1999', 'STN' ,  'bullet journal',  10, '2023-03-28', 'Ottawa'),
+    ('Charles1999', 'STN' ,  'notebook',  9, '2021-06-22', 'Calgary'),
+    ('Charles1999', 'STN' ,  'Anthro textbook',  5, '2022-05-31', 'Toronto'),
+    ('Charles1999', 'STN' ,  'notebook',  7, '2023-10-12', 'Calgary'),
+    ('Charles1999', 'STN' ,  'notebook',  8, '2022-07-21', 'Ottawa')
 ]
 
 # Past Transactions data
@@ -90,7 +90,7 @@ cur.executemany(
 con.commit()
 
 cur.executemany(
-    "INSERT INTO users VALUES(?, ?, ?, ?, ?, ?, ?, ?)", udata)
+    "INSERT INTO users VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)", udata)
 con.commit()
 
 con.close()
