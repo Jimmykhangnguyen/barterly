@@ -68,16 +68,16 @@ tdata = [
     ('STN', 'CLO', 'post-it notes', 'avocado socks', 'user_85', 'user_82', 3, 0, '2019-11-22'),
     ('CLO', 'STN', 'shirt', 'Scientific calculator', 'user_58', 'user_17', 9, 6, '2023-04-30'),
     ('STN', 'ELE', 'notebook', 'iphone 11', 'user_66', 'user_83', 7, 2, '2020-07-09'),
-    ('CLO', 'ELE', 'jeans', 'apple watch', 'user_34', 'user_87', 9, 0, '2021-08-17'),
-    ('STN', 'CLO', 'notebook', 'avocado socks', 'user_93', 'user_84', 7, 2, '2019-07-25'),
-    ('CLO', 'STN', 'sweatpants', 'Scientific calculator', 'user_72', 'user_88', 9, 8, '2021-11-14'),
+    ('CLO', 'ELE', 'jeans', 'apple watch', 'user_87', 'user_34', 9, 0, '2021-08-17'),
+    ('STN', 'CLO', 'notebook', 'avocado socks', 'user_84', 'user_93', 7, 2, '2019-07-25'),
+    ('CLO', 'STN', 'sweatpants', 'Scientific calculator', 'user_88', 'user_72', 9, 8, '2021-11-14'),
     ('ELE', 'ELE', 'hp laptop', 'hp laptop', 'user_33', 'user_51', 4, 6, '2019-06-03'),
     ('CLO', 'STN', 'avocado socks', 'Calc II textbook', 'user_1', 'user_18', 6, 9, '2021-12-22'),
-    ('STN', 'ELE', 'Calc II textbook', 'iphone 11', 'user_17', 'user_19', 5, 5, '2022-05-20'),
-    ('STN', 'STN', 'Calc II textbook', 'notebook', 'user_77', 'user_91', 0, 2, '2019-04-15'),
+    ('STN', 'ELE', 'Calc II textbook', 'iphone 11', 'user_19', 'user_17', 5, 5, '2022-05-20'),
+    ('STN', 'STN', 'Calc II textbook', 'notebook', 'user_91', 'user_77', 0, 2, '2019-04-15'),
     ('ELE', 'STN', 'sony headphones', 'Scientific calculator', 'user_39', 'user_46', 2, 5, '2021-10-03'),
     ('STN', 'CLO', 'notebook', 'avocado socks', 'user_94', 'user_25', 9, 9, '2022-11-23'),
-    ('ELE', 'CLO', 'sony headphones', 'jeans', 'user_2', 'user_7', 8, 8, '2022-01-12')
+    ('ELE', 'CLO', 'sony headphones', 'jeans', 'user_7', 'user_2', 8, 8, '2022-01-12')
 ]
 
 
