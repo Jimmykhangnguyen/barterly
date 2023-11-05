@@ -5,7 +5,14 @@ const NavBar = ({ islogged }) => {
 
     function Logout(){
         localStorage.setItem('username', JSON.stringify(""));
-        localStorage.setItem('loggedin', JSON.stringify(false));
+        localStorage.setItem('logged', false);
+        localStorage.setItem('nameDisplay', JSON.stringify(""));
+
+        islogged = false;
+        console.log("Here")
+        console.log(localStorage.getItem('logged'));
+
+        window.location.href = "/";
     }
     return (
         <div className={styles.main} href="/profile">
@@ -19,7 +26,7 @@ const NavBar = ({ islogged }) => {
                 {islogged ?
                     <div style={{ color: "white", display: "flex" }}>
                         <a className={styles.link} href="/#/profile">Profile</a>
-                        <a className={styles.link} style={{ marginLeft: "20px" }} onClick={Logout}>Logout</a>
+                        <a className={styles.link} href="/" style={{ marginLeft: "20px" }} onClick={Logout}>Logout</a>
                     </div>
                     :
                     <div style={{ color: "white", display: "flex" }}>

@@ -7,6 +7,7 @@ function Login({ userDataCallback }) {
     const formRef = useRef();
     const [authData, setAuthData] = useState([]);
     const [username, setUsername] = useState("");
+    const [name, setName] = useState("");
     const [submissionState, setSubmissionState] = useState(false);
     const [pass, setPass] = useState("");
     const [loginSuccess, setLoginSuccess] = useState(null);
@@ -25,7 +26,7 @@ function Login({ userDataCallback }) {
                     setLoginSuccess(false); // Set loginSuccess to false on error
                 }); 
         }
-    }, [submissionState]); // Run the effect whenever the username changes
+    }, [submissionState]); 
     useEffect(() => {
         if(authData[0]){
             validateLogin();
@@ -33,19 +34,23 @@ function Login({ userDataCallback }) {
     }, [authData]); 
 
     function redirectHome() {
-        console.log(loginSuccess);
         localStorage.setItem('username', JSON.stringify(username));
-        localStorage.setItem('loggedin', JSON.stringify(true));
+        localStorage.setItem('logged', JSON.stringify(true));
+        localStorage.setItem('nameDisplay', JSON.stringify(authData[0][1]));
+
+        // console.log(username);
+        console.log(JSON.parse(localStorage.getItem("logged")));
+        // console.log(authData[0][1]);
+
         window.location.href = "/";
     }
     function validateLogin() {
 
-        console.log(authData);
-        console.log(pass);
-
         if (authData[0][0] === pass) { 
             setLoginSuccess(true);
+            setName(authData[0][1].toString());
             redirectHome();
+
         } else { 
             setLoginSuccess(false); 
             setIsDisabled(false); 
@@ -63,7 +68,7 @@ function Login({ userDataCallback }) {
 
     }
 
-    userDataCallback(username, loginSuccess);
+    userDataCallback(username, loginSuccess, name);
 
     return (
         <header className="App-header">

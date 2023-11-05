@@ -24,7 +24,7 @@ def get_login():
         cursor = connection.cursor()
 
         usercheckquery = request.args.get('query')
-        cursor.execute("SELECT password FROM users WHERE username = '{u}'".format(u=usercheckquery))
+        cursor.execute("SELECT password, name FROM users WHERE username = '{u}'".format(u=usercheckquery))
         data = cursor.fetchall()
 
         # df = pd.DataFrame(data, columns=["column_name_1", "column_name_2", ...])
