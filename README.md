@@ -1,71 +1,37 @@
-# Getting Started with Create React App
+# Barterly - Trading for all.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+                    ___           ___                       ___           ___                               
+     _____         /  /\         /  /\          ___        /  /\         /  /\                        ___   
+    /  /::\       /  /::\       /  /::\        /  /\      /  /:/_       /  /::\                      /__/|  
+   /  /:/\:\     /  /:/\:\     /  /:/\:\      /  /:/     /  /:/ /\     /  /:/\:\    ___     ___     |  |:|  
+  /  /:/~/::\   /  /:/~/::\   /  /:/~/:/     /  /:/     /  /:/ /:/_   /  /:/~/:/   /__/\   /  /\    |  |:|  
+ /__/:/ /:/\:| /__/:/ /:/\:\ /__/:/ /:/___  /  /::\    /__/:/ /:/ /\ /__/:/ /:/___ \  \:\ /  /:/  __|__|:|  
+ \  \:\/:/~/:/ \  \:\/:/__\/ \  \:\/:::::/ /__/:/\:\   \  \:\/:/ /:/ \  \:\/:::::/  \  \:\  /:/  /__/::::\  
+  \  \::/ /:/   \  \::/       \  \::/~~~   \__\/  \:\   \  \::/ /:/   \  \::/~~~~    \  \:\/:/      ~\~~\:\ 
+   \  \:\/:/     \  \:\        \  \:\           \  \:\   \  \:\/:/     \  \:\         \  \::/         \  \:\
+    \  \::/       \  \:\        \  \:\           \__\/    \  \::/       \  \:\         \__\/           \__\/
+     \__\/         \__\/         \__\/                     \__\/         \__\/                              
 
-## Available Scripts
+![Barterly Logo](btr.png)
 
-In the project directory, you can run:
+Barterly is a unique online platform that facilitates the exchange of goods and services without the use of traditional currency. Users can trade items they no longer need for items they desire, fostering a sense of community and sustainability.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. User-Friendly Interface
+Barterly offers a simple and intuitive interface, making it easy for users to list items, browse offerings, and initiate trades.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Search and Filter
+Easily find items you're interested in by searching for specific keywords or applying filters based on category, location, and more.
 
-### `npm test`
+### 3. Secure Messaging
+Communicate with potential trading partners through our secure messaging system to discuss the details of the trade.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 4. Ratings and Reviews
+Leave feedback and ratings after each successful trade to build trust within the community.
 
-### `npm run build`
+### 5. Sustainability
+Barterly promotes a sustainable lifestyle by reducing waste and promoting the reuse of items.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# barterly
+### 6. Community Building
+Connect with like-minded individuals in your local area and build a community of bartering enthusiasts.

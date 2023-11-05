@@ -5,7 +5,7 @@ import axios from 'axios';
 function SignUp() {
 
     const formRef = useRef();
-    const [queryString, setQueryString] = useState();
+    const [queryString, setQueryString] = useState("");
     const [authData, setAuthData] = useState();
     const [notif, setNotif] = useState("Sign Up");
 
@@ -34,7 +34,7 @@ function SignUp() {
     useEffect(() => {
         // Only make the API request if the username is not empty
         axios
-            .get(`http://localhost:8080/add_user?query=${queryString}`)
+            .get(`http://100.66.68.63:8080/add_user?query=${queryString}`)
             .then((response) => {
                 setAuthData(response.data); // Assuming the API returns a success flag
                 console.log(authData);
@@ -44,7 +44,7 @@ function SignUp() {
             });
     }, [queryString]);
     useEffect(() => {
-        if(authData[0]){
+        if(authData && queryString){
             window.location.href = "/#/login";
         }
     }, [authData]);

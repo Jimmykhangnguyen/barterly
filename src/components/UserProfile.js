@@ -51,7 +51,7 @@ function UserProfile() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8080/get_useritems?query=${username}`)
+            .get(`http://100.66.68.63:8080/get_useritems?query=${username}`)
             .then((response) => {
                 checkValidity(response.data);
             })

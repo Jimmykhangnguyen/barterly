@@ -39,7 +39,7 @@ function Home() {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:8080/${requestType}`)
+            .get(`http://100.66.68.63:8080/${requestType}`)
             .then((response) => {
                 checkValidity(response.data);
             })

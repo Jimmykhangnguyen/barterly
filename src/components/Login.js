@@ -17,7 +17,7 @@ function Login({ userDataCallback }) {
         if (username) {
             // Only make the API request if the username is not empty
             axios
-                .get(`http://localhost:8080/get_login?query=${username}`)
+                .get(`http://100.66.68.63:8080/get_login?query=${username}`)
                 .then((response) => {
                     setAuthData(response.data); // Assuming the API returns a success flag
                 })
