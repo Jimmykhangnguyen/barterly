@@ -1,0 +1,59 @@
+.mainBox{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-justify: left;
+    justify-content: left;
+    row-gap: 10px;
+
+}
+.searchParent{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.textStyles{
+
+    font-family: "Azeret Mono";
+    font-size: large;
+    color: white;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 60%;
+    height: 5vh;
+    padding: 3%;
+
+}
+.submit{
+
+    font-family: "Azeret Mono";
+    font-size: large;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgb(84, 84, 84);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 20%;
+    height: 100%;
+
+}
+.submit:hover{
+    cursor: pointer;
+    color: rgb(189, 189, 189);
+    background-color: rgb(59, 59, 59);
+
+}
+.submit:active{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(27, 27, 27);
+
+}

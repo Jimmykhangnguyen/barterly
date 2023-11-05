@@ -1,42 +1,95 @@
 import styles from "./profile.module.css";
-import React from "react";
-import profileImage from './profile_pic/profile1.jpg';
-
+import ItemLayout from "./ItemLayout";
+import { React, useState, useEffect, useRef } from "react";
+import axios from 'axios';
 
 function UserProfile() {
 
-    const name = "Thomas Yonge";
-    const email = "thomas@gmail.com";
-    const location = "Toronto";
-    const privacySetting = "Private";
-    const joinedDate = "20/6/2023";
+    const [makeRequest, setMakeRequest] = useState(false);
+    const [rqCount, setRqCount] = useState(0);
+
+    const [name, setName] = useState("");
+    const [location, setLocation] = useState("");
+    const [email, setEmail] = useState("");
+    const [joinedDate, setJoinedDate] = useState("");
+    const [fi, setfi] = useState("");
+    const [li, setli] = useState("");
+    const [itemList, setItemList] = useState([]);
+    const [loaded, setLoaded] = useState(false);
+
+    const username = JSON.parse(localStorage.getItem('username'));
+    const isLogged = JSON.parse(localStorage.getItem('logged'));
+
+    function handleEmptyUser() {
+        if (!(username && isLogged)) {
+            window.location.href = "/";
+        } else {
+            setMakeRequest(!makeRequest);
+        }
+    }
+    function checkValidity(data) {
+        if (!data[0] && rqCount < 2) {
+            setMakeRequest(!makeRequest);
+            setRqCount(rqCount + 1);
+        } else {
+            if(!data[0]){window.location.href = "/";}
+            const ns = data[0][3].split(' ');
+            console.log(ns)
+            const nsplit = data[0][8].split(' ');
+            setName(data[0][3]);
+            setEmail(data[0][1]);
+            setLocation(data[0][7]);
+            setJoinedDate(nsplit[1] + " " + nsplit[2] + " " + nsplit[3]);
+            setItemList(data.slice(1))
+
+            setfi(ns[0][0]);
+            setli(ns[1][0]);
+            setLoaded(true);
+        }
+    }
+    window.onload = function () { handleEmptyUser(); };
+
+    useEffect(() => {
+        axios
+            .get(`http://localhost:8080/get_useritems?query=${username}`)
+            .then((response) => {
+                checkValidity(response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }, [makeRequest]);// On change of mkrq. 
 
     return (
-        <header className="App-header">
-            <div className={styles.profile_header}>
-                <p className={styles.profile_text}>My profile.</p>
+        <div className={styles.header1}>
+
+            <div style={{ marginTop:"50vh",width: "100%", display: "flex", justifyContent: "center", columnGap: "100px" }}>
+
+                <div style={{ display: "flex", flexDirection: "column", rowGap: "20px", justifyContent: "center" }}>
+                    <div className={styles.profile_pic}>
+                        <div style={{ width: "100%", display: "flex", alignContent: 'center', justifyContent: 'center', marginTop: "40px", fontWeight: "bold", fontSize: "100px" }}>{fi}{li}</div>
+                    </div>
+                    <div className={styles.profile_edit}>
+                        <a href="/" className={styles.link}>edit listings</a>
+                    </div>
+                </div>
+                <div className={styles.profile_info}>
+
+                    <p><a style={{fontWeight:"bold"}}>Name:</a> {name}</p>
+                    <p><a style={{fontWeight:"bold"}}>Email:</a> {email}</p>
+                    <p><a style={{fontWeight:"bold"}}>Location:</a> {location}</p>
+                    <p>Joined on {joinedDate}</p>
+
+                </div>
+
+
+
             </div>
 
-            <div>
-                <a href="/Trading/Trading" className={styles.linkToTrade}>items for trade</a>
-            </div>
+            <ItemLayout items={itemList} />
 
-            <div className={styles.profile_info}>
-                <ul><p>Name: {name}</p></ul>
-                <ul><p>Email: {email}</p></ul>
-                <ul><p>Location: {location}</p></ul>
-                <ul><p>Privacy setting: {privacySetting}</p></ul>
-                <ul><p>Joined on {joinedDate}</p></ul>
-            </div>
+        </div>
 
-            <div className={styles.profile_pic}>
-                <img src={profileImage} alt="My profile picture" />
-            </div>
-
-            <div className={styles.profile_edit}>
-                <a href="/SignUp" className={styles.profile_edit_text}>edit profile</a>
-            </div>
-        </header>
     );
 }
 
